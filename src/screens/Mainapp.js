@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const CounterScreen = () => {
+const Mainapp = () => {
   return (
     <View>
-      <Text>CounterScreen</Text>
+      <Text>Mainapp</Text>
     </View>
   )
 }
 
-export default CounterScreen;
+export default Mainapp;
 
 const styles = StyleSheet.create({})
