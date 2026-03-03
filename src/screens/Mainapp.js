@@ -1,14 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import Login from './Login';
+import Home from './Home';
 
 const Mainapp = () => {
-  return (
-    <View>
-      <Text>Mainapp</Text>
-    </View>
-  )
-}
+  const user = useSelector(state => state.auth.user);
+
+  if (user) {
+    return <Home />;
+  }
+
+  return <Login />;
+};
 
 export default Mainapp;
-
-const styles = StyleSheet.create({})
