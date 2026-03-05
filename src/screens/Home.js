@@ -38,7 +38,7 @@ const Home = () => {
         )}
       />
 
-      <Button title="Clear All" onPress={() => dispatch(clearTasks())} />
+      {/* <Button title="Clear All" onPress={() => dispatch(clearTasks())} /> */}
 
     </View>
   );
