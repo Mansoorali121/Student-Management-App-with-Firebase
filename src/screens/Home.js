@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, Text, TextInput, Button, FlatList } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 import { addTask, deleteTask, clearTasks } from "../redux/taskSlice";
+import { s } from "react-native-size-matters";
 
 const Home = () => {
   const [text, setText] = useState("");
@@ -10,7 +11,7 @@ const Home = () => {
   const tasks = useSelector(state => state.tasks.tasks);
 
   return (
-    <View style={{ padding: 20 }}>
+    <View style={{ padding: 20 , gap:s(10)}}>
 
       <Text>Total Tasks: {tasks.length}</Text>
 
