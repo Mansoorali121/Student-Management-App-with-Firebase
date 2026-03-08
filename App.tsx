@@ -1,12 +1,14 @@
-import React from "react";
-import { Provider } from "react-redux";
-import { store } from "./src/redux/store";
-import Calculator from "./src/components/Calculator";
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-export default function App() {
+const App = () => {
   return (
-    <Provider store={store}>
-      <Calculator />
-    </Provider>
-  );
+    <View>
+      <Text>App</Text>
+    </View>
+  )
 }
+
+export default App;
+
+const styles = StyleSheet.create({})
