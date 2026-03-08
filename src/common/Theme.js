@@ -84,6 +84,13 @@ const theme = {
     small: 12,
 
   },
+  fonts: {
+ regular: "Outfit-Regular",
+ medium: "Outfit-Medium",
+ semiBold: "Outfit-SemiBold",
+ bold: "Outfit-Bold",
+ normal:"Outfit-Light",
+},
 
   shadow: {
 
