@@ -1,4 +1,4 @@
-import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Image, StyleSheet, View, Text } from 'react-native';
 import React from 'react';
 import { s } from 'react-native-size-matters';
 import theme from '../common/Theme';
@@ -23,37 +23,31 @@ const data = [
 
 const SplashCard = () => {
   return (
-    <View style={styles.container}>
-      <FlatList
-        data={data}
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        keyExtractor={item => item.id}
-        renderItem={({ item }) => {
-          return (
-            <View style={styles.itemcontainer}>
-              <Image source={{ uri: item.image }} style={styles.image} />
-            </View>
-          );
-        }}
-      />
-    </View>
+    <FlatList
+      data={data}
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      contentContainerStyle={{ gap: s(10) }}
+      keyExtractor={item => item.id}
+      renderItem={({ item }) => {
+        return (
+          <View style={styles.container}>
+            <Image source={{ uri: item.image }} style={styles.image} />
+          </View>
+        );
+      }}
+    />
   );
 };
 
 export default SplashCard;
 
 const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    marginTop: s(20),
-    backgroundColor: theme.colors.background,
-  },
   image: {
-    height: s(250),
-    width: s(150),
+    height: s(300),
+    width: s(200),
     borderRadius: theme.radius.round,
-    resizeMode: 'stretch',
+    // resizeMode: 'stretch',
   },
-  itemcontainer: { marginHorizontal: s(5) },
+  container: { marginTop: s(25), marginHorizontal: s(10) },
 });

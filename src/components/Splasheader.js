@@ -5,12 +5,14 @@ import theme from '../common/Theme';
 
 const Splasheader = () => {
   return (
-    <View style={styles.container}>
-      <Image
-        source={require('../assets/icons/logo.png')}
-        style={styles.image}
-      />
-      <Text style={styles.title}>Tech</Text>
+    <View  >
+      <View style={styles.itemcontainer}>
+        <Image
+          source={require('../assets/icons/logo.png')}
+          style={styles.image}
+        />
+        <Text style={styles.title}>Tech</Text>
+      </View>
     </View>
   );
 };
@@ -25,12 +27,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  container: {
-    marginTop: s(40),
+ 
+  itemcontainer: {
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'center',
     gap: s(10),
+    marginTop:s(20)
+
   },
   title: { fontSize: s(20), fontFamily: theme.fonts.semiBold },
 });
