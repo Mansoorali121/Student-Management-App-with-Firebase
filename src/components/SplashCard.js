@@ -44,12 +44,16 @@ const SplashCard = () => {
 export default SplashCard;
 
 const styles = StyleSheet.create({
-  container: { alignItems: 'center', marginTop: s(20) },
+  container: {
+    alignItems: 'center',
+    marginTop: s(20),
+    backgroundColor: theme.colors.background,
+  },
   image: {
-    height: s(280),
-    width: s(200),
+    height: s(250),
+    width: s(150),
     borderRadius: theme.radius.round,
     resizeMode: 'stretch',
   },
-  itemcontainer: { marginHorizontal: s(5) , backgroundColor:theme.colors.background},
+  itemcontainer: { marginHorizontal: s(5) },
 });
