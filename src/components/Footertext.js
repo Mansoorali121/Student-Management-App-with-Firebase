@@ -35,5 +35,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: theme.colors.textLight,
     padding: s(5),
+    marginBottom: s(70),
   },
 });

@@ -27,7 +27,7 @@ const SplashCard = () => {
       data={data}
       horizontal
       showsHorizontalScrollIndicator={false}
-      contentContainerStyle={{ gap: s(10) }}
+      contentContainerStyle={{ gap: s(2) }}
       keyExtractor={item => item.id}
       renderItem={({ item }) => {
         return (
