@@ -21,8 +21,9 @@ const styles = StyleSheet.create({
   image: {
     height: s(50),
     width: s(50),
-    backgroundColor: theme.colors.background,
     borderRadius: theme.radius.round,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   container: {
     marginTop: s(40),
@@ -31,5 +32,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: s(10),
   },
-  title:{fontSize:s(20),fontFamily:theme.fonts.normal},
+  title: { fontSize: s(20), fontFamily: theme.fonts.semiBold },
 });
