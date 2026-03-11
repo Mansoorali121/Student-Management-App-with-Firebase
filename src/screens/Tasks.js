@@ -3,12 +3,14 @@ import React from 'react';
 import Toptabs from '../components/Toptabs';
 import { s } from 'react-native-size-matters';
 import Searchbox from '../components/Searchbox';
+import Subjecttabs from "../components/Subjecttabs";
 
 const Tasks = () => {
   return (
     <View style={styles.cotainer}>
       <Toptabs />
       <Searchbox />
+      <Subjecttabs/>
     </View>
   );
 };
