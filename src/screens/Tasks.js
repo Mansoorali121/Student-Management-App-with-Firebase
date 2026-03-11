@@ -4,6 +4,7 @@ import Toptabs from '../components/Toptabs';
 import { s } from 'react-native-size-matters';
 import Searchbox from '../components/Searchbox';
 import Subjecttabs from "../components/Subjecttabs";
+import Todolist from "../components/Todolist";
 
 const Tasks = () => {
   return (
@@ -11,6 +12,7 @@ const Tasks = () => {
       <Toptabs />
       <Searchbox />
       <Subjecttabs/>
+      <Todolist/>
     </View>
   );
 };

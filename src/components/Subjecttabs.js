@@ -12,24 +12,44 @@ const Subjecttabs = () => {
             source={require('../assets/icons/book.png')}
             style={styles.image}
           />
-          <Text>Subject:</Text>
-          <Text style={{ fontWeight: '500' }}>All</Text>
+          <Text style={styles.subjectname}>Subject:</Text>
+          <Text style={{ fontWeight: '500', fontSize: s(10) }}>All</Text>
           <Image
             source={require('../assets/icons/down-arrow.png')}
             style={styles.image}
           />
         </View>
-        <View style={[styles.bookbox,{width:s(155)}]}>
+        <View style={[styles.bookbox, { width: s(155) }]}>
           <Image
             source={require('../assets/icons/filter.png')}
             style={styles.image}
           />
-          <Text>Sort by:</Text>
-          <Text>Do first</Text>
+          <Text style={styles.subjectname}>Sort by:</Text>
+          <Text style={{ fontSize: s(10) }}>Do first</Text>
           <Image
             source={require('../assets/icons/down-arrow.png')}
             style={styles.image}
           />
+        </View>
+      </View>
+      {/* Footer  */}
+      <View style={styles.footer}>
+        <Text style={styles.footertitle}>Wednesdday</Text>
+        <View style={styles.datecontainer}>
+          <Text>6 tasks</Text>
+          <View style={styles.datebox}>
+            <Image
+              source={require('../assets/icons/calendar.png')}
+              style={styles.image}
+            />
+            <Text style={[styles.subjectname, { fontWeight: '500' }]}>
+              18,Jan 25
+            </Text>
+            <Image
+              source={require('../assets/icons/down-arrow.png')}
+              style={styles.image}
+            />
+          </View>
         </View>
       </View>
     </View>
@@ -53,5 +73,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: s(14),
   },
   image: { height: s(20), width: s(20) },
-  boxcontainer:{ flexDirection: 'row', gap: s(5) }
+  boxcontainer: { flexDirection: 'row', gap: s(5) },
+  subjectname: { fontSize: s(12) },
+  footer: { marginTop: s(20) },
+  footertitle: { fontSize: s(20), fontWeight: '500' },
+  datecontainer: { flexDirection: 'row', justifyContent: 'space-between' },
+  datebox: {
+    backgroundColor: theme.colors.background,
+    width: s(130),
+    height: s(32),
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: theme.radius.round,
+    paddingHorizontal: s(10),
+  },
 });
