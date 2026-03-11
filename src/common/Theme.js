@@ -5,7 +5,7 @@ const theme = {
     // Primary Brand Colors
     primary: "#6C63FF",
     primaryDark: "#574FD6",
-    primaryLight: "#a6d4dd",
+    primaryLight: "#f8e4dd",
 
     // Secondary
     secondary: "#d3d2e8",
