@@ -24,7 +24,7 @@ const Todolist = ({ image, subject_name, time, status }) => {
           <Text style={styles.basictext}>{subject_name}</Text>
           <Text style={styles.mintstext}>{time} min</Text>
         </View>
-        <View style={styles.donebtn}>
+        <View style={[styles.donebtn,{backgroundColor:status === "Done"? theme.colors.done:theme.colors.todo}]}>
           <Text>{status}</Text>
         </View>
       </View>
