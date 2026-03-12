@@ -7,20 +7,18 @@ const Todolist = () => {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
-        <View style={{flexDirection:"row"}}>
-            <View>
-            <Image
-          source={require('../assets/icons/search.png')}
-          style={styles.image}
-        />
+        <View>
+          <Image
+            source={require('../assets/icons/search.png')}
+            style={styles.image}
+          />
         </View>
-        <View style={styles.cardtext}>
-          <Text style={{ marginStart: s(10) }}>Basic Mathematics</Text>
-          <Text style={{ marginStart: s(10) }}>45 Min</Text>
+        <View>
+          <Text style={styles.basictext}>Basic mathematics</Text>
+          <Text style={styles.mintstext}>45 min</Text>
         </View>
         <View style={styles.donebtn}>
           <Text>Done</Text>
-        </View>
         </View>
       </View>
     </View>
@@ -31,20 +29,24 @@ export default Todolist;
 
 const styles = StyleSheet.create({
   container: { marginTop: s(10) },
-  image: { height: s(60), width: s(60), marginStart: s(10), marginTop: s(10) },
+  image: { height: s(70), width: s(70), marginTop: s(5) },
   card: {
     height: s(90),
     backgroundColor: theme.colors.background,
     borderRadius: theme.radius.md,
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: s(7),
   },
-  cardtext: { marginTop: s(15), gap: s(10) },
   donebtn: {
     height: s(20),
-    backgroundColor: theme.colors.primary,
+    backgroundColor: theme.colors.done,
     width: s(40),
     borderRadius: theme.radius.md,
     alignItems: 'center',
     justifyContent: 'center',
   },
+  basictext: { marginBottom: s(10), fontWeight: '500' },
+  mintstext: { fontSize: s(10) },
 });
