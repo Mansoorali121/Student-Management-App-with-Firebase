@@ -22,8 +22,9 @@ const styles = StyleSheet.create({
     borderRadius: theme.radius.round,
     flexDirection:"row",
     justifyContent:"space-evenly",
-    width:"70%",
-    alignItems:"center"
+    alignItems:"center",
+        paddingHorizontal: s(12),
+
   },
   normal:{fontSize:s(10)},
 });

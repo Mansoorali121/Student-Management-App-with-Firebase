@@ -15,7 +15,7 @@ const Schedule = () => {
       {/* Footer Items and Timing */}
       <View style={styles.footerbox}>
         <Footeritems time="08:AM" />
-        <Footerbox subject="Basic Mathematics" time="08:AM - 09AM " />
+        <Footerbox subject="Basic Mathematics Subject " time=" 08:AM - 09AM "  />
       </View>
       <View style={styles.footerbox}>
         <Footeritems time="09:AM" />
@@ -23,7 +23,7 @@ const Schedule = () => {
 
 <View style={styles.footerbox}>
         <Footeritems time="10:AM" />
-                <Footerbox subject="English Grammer" time="10:AM - 11AM " />
+                <Footerbox subject="English Grammer & Tenses" time="10:AM - 11AM " />
 
       </View>
       <View style={styles.footerbox}>
@@ -49,7 +49,7 @@ const Schedule = () => {
       </View>
         <View style={styles.footerbox}>
         <Footeritems time="02:PM" />
-                <Footerbox subject="Programming" time="02:PM - 03PM " />
+                <Footerbox subject="Programming Fundamentals " time="02:PM - 03PM " />
 
       </View>
         <View style={styles.footerbox}>
